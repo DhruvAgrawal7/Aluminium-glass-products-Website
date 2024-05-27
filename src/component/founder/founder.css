@@ -1,0 +1,38 @@
+.founder-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.founder-card {
+    width: 250px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.founder-card:hover {
+    filter: drop-shadow(0 0 10px #333);
+    transform: translateY(-5px);
+}
+
+.founder-img {
+    height: 250px;
+    /* object-fit: cover; */
+}
+
+.founder-body {
+    padding: 20px;
+}
+
+.founder-name {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.founder-phone {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-bottom: 0;
+}

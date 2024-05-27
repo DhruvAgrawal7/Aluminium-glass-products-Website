@@ -1,0 +1,57 @@
+/* about.css */
+
+#about-wrap {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+#about-des{
+    width: 85%; 
+    margin: 3% 0px;
+}
+
+
+.title {
+    text-align: center;
+    color: #555;
+    font-size: 24px;
+    padding-top: 3%;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-card {
+    margin: 10px;
+    width: 300px;
+}
+
+.abt-card-header {
+    background-color: #7b39ab;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+    #about-wrap{
+        flex-direction: column;
+    }
+    .about-card {
+        width: 90%; /* Set card width to 100% on smaller screens */
+    }
+}
+

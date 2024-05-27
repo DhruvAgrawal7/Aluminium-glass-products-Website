@@ -1,0 +1,80 @@
+/* header.css */
+
+#nav-wrap {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure the header is above other content */
+    background-color: #ffffff; /* Background color for sticky header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+}
+
+#upper-nav {
+    display: flex;
+    padding: 10px 0; /* Added padding for better spacing */
+    background-color: #f8f9fa; /* Added a light background color */
+    border-bottom: 1px solid #dee2e6; /* Added a border between upper nav and navbar */
+}
+
+.upper-nav-div {
+    display: flex;
+    align-items: center; /* Center align icons and text vertically */
+    margin: 0px 3%;
+}
+
+.upper-nav-div span {
+    margin: 0 10px; /* Adjusted spacing between elements */
+    cursor: pointer;
+}
+
+.upper-nav-div span:hover {
+    color:#007bff;
+}
+#upper-nav-div1{
+    font-size: large;
+    width: 8%;
+}
+#upper-nav-div1 .nav-icon{
+    margin: 0px 5px;
+}
+
+.nav-icon:hover{
+    color: #007bff;
+}
+#upper-nav-div2{
+    width: 92%;
+    justify-content: flex-end;
+}
+
+#navbar {
+    background-color: #ffffff; /* Changed navbar background color */
+    border-bottom: 2px solid #007bff; /* Added a bottom border for a distinct look */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#logo {
+    width: 40px; /* Increased logo size for better visibility */
+    height: 40px;
+    border-radius: 50%;
+}
+
+.nav_item {
+    font-size: 1.2rem; /* Increased font size for better readability */ 
+    color: #514f4f; /* Black text color */
+    text-transform: uppercase;
+    font-weight: 600; /* Added font weight for emphasis */
+    margin: 0 10px; /* Adjusted spacing between nav items */
+}
+
+.nav_item:hover {
+    color: #007bff; /* Hover color */
+}
+@media (max-width : 1050px) {
+    .upper-nav-div span {
+        margin: 0 5px;
+    }
+}
+@media (max-width : 1023px) {
+    #upper-nav{
+        display: none;
+    }
+} 

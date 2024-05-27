@@ -1,0 +1,107 @@
+.detail{
+    background-image: url('../../assets/background.png');
+}
+.detail-title{
+    margin-top: 4%;
+    margin-bottom: 0px !important; 
+    color: white !important;
+}
+.detail-div{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2% 2% 0 2%;
+    padding-top: 2%;
+    background-color: rgb(245, 235, 221);
+}
+
+/* animations */
+.detail-img{
+    width: 30%;
+    height: 400px;
+    min-width: 200px;
+    transform: translate(-150%);
+    animation: about-text-animation 1s ease-in-out forwards;
+}
+
+@keyframes about-text-animation {
+  100% {
+    transform: translate(0);
+  }
+}
+
+.detail-des{
+    width: 32%;
+    background-color: blanchedalmond;
+    padding: 2%;
+    font-size: 20px;
+    border-radius: 10px;
+    min-width: 200px;
+    height: 400px;
+    transform: translateX(150%);
+    animation: about-img-animation 1s ease-in-out forwards;
+}
+  
+@keyframes about-img-animation {
+    100% {
+      transform: translate(0);
+    }
+}
+
+.work-detail-Parentdiv{
+    background-color: white;
+    padding: 3%;
+}
+.work-detail-div{
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+.work-detail-img{
+    max-width: 300px;
+    max-height: 300px;
+    width : 28%;
+}
+ /* animations */
+@media (max-width : 1280px) {
+    .detail-img{ 
+        width: 40%;
+        height: 350px;
+    }
+    .detail-des{
+        width: 40%;
+        height: 350px;
+    }
+}
+@media (max-width : 1004px) {
+    .detail-img{ 
+        width: 47%;
+        height: 440px;
+    }
+    .detail-des{
+        width: 49%;
+        height: 440px;
+    }
+}
+@media (max-width : 700px) {
+    .detail-img{ 
+        width: 80%;
+        height: 350px;
+    }
+    .detail-des{
+        width: 80%;
+        margin-top: 5%;
+        margin-bottom: 0px;
+        height: auto;
+    }
+    .work-detail-div{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .work-detail-img{
+        width: 100%;
+        margin: 3%;
+    }
+    
+}
