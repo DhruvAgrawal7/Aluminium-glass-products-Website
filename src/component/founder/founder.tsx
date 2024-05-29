@@ -1,7 +1,7 @@
 import React from 'react';
 import './founder.css';
 import sudhir from '../../assets/sudhir.jpg';
-import harkesh from '../../assets/harkesh.png';
+import harkesh from '../../assets/harkesh.jpg';
 import vishal from '../../assets/vishal.png';
 import { Card, CardBody, CardImg } from 'react-bootstrap';
 
